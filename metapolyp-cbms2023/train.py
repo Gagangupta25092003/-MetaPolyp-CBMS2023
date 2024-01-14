@@ -20,7 +20,7 @@ save_path = "best_model.h5"
 
 valid_size = 0.1
 test_size = 0.15
-epochs = 350
+epochs = 600
 save_weights_only = True
 max_lr = 1e-4
 min_lr = 1e-6
@@ -40,8 +40,8 @@ def myprint(s):
 model.summary(print_fn=myprint)
 model.summary()
 # model = create_segment_model()
-starter_learning_rate = 1e-4
-end_learning_rate = 1e-6
+starter_learning_rate = 1e-3
+end_learning_rate = 1e-5
 decay_steps = 1000
 learning_rate_fn = tf.keras.optimizers.schedules.PolynomialDecay(
     starter_learning_rate,

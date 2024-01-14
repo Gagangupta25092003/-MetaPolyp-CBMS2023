@@ -23,8 +23,8 @@ def mask_parse(mask):
     return mask*255
 
 if __name__ == "__main__":
-    save_path = "best_model.h5"
-    img_in = "cju0qoxqj9q6s0835b43399p4.jpg"
+    save_path = "pretrained_model.h5"
+    img_in = "/home/skycoder/Desktop/Meta-polyp/metapolyp-cbms2023/TestDataset/TestDataset/ETIS-LaribPolypDB/images/9.png"
     img_out = "out1.jpg"
 
     model = load_model(save_path)
